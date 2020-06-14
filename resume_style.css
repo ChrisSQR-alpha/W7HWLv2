@@ -1,0 +1,334 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: Microsoft JhengHei;;
+    font-size: 24px;
+    overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**, *::before, *::after {
+    box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}*/
+
+/*share style*/
+.wrap{
+    margin: 0 auto;
+    max-width: 1540px;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.headerOut{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 215px;
+    border-bottom: 2px solid #000;
+    margin-top: 48px;
+    background-color: #fff;
+}
+.subtitle{
+    margin: 0 auto;
+    line-height: 36px;
+    max-width: 1200px;
+    height:100%;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 24px;
+
+ }
+.subtitleCh{
+    display: inline-block;
+    line-height: 45px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.subtitleEn{
+    display: inline-block;
+    margin-left: 16px;
+    line-height: 32px;
+    font-size: 24px;
+    font-family: Roboto;
+    color: #A00404
+}
+.joanneImgOut{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contentOut{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content{
+    font-size: 24px;
+    line-height: 36px;
+    border-left: 1px solid #96A9C4;
+    margin-left: 24px;
+ }
+ .content li{
+     margin-bottom: 32px;
+     font-size: 24px;
+     line-height: 36px;
+     font-weight: bold;
+     margin-left: 26px;
+ }
+ .content  p{
+    max-width : 642px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
+.dot{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+}
+/*裝飾*/
+div.dot::before{
+    content:"";
+    display: inline-block;
+    background-color: #96A9C4;
+    width: 16px;
+    height: 16px;
+    border-radius: 50% ;
+    margin-right: 13px;
+    margin-left: 15px;
+}
+.dotEdu{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    margin-bottom: 32px;
+
+}
+div.dotEdu::before{
+    content:"";
+    display: inline-block;
+    background-color: #96A9C4;
+    width: 16px;
+    height: 16px;
+    border-radius: 50% ;
+    margin-right: 13px;
+    margin-left: 15px;
+}
+.verticalLine{
+    position:absolute;
+    z-index: 2;
+    top:1080px;
+    display: inline-block;
+    background-color: #96A9C4;
+    width: 1px;
+    height: 70px;
+    margin-left: 22px;
+}
+
+
+/*header style*/
+
+.headerName{
+    max-width: 288px;
+    height: 180px;
+    font-size: 80px;
+    font-family: Andale Mono, regular;
+    line-height: 90px;
+}
+.joanneImg{
+    max-width: 324px;
+    height: 100%; /*324*/
+    /*margin-left: 360px;*/
+    margin-top:36px;
+    margin-bottom:48px;
+
+}
+.profile{
+    border-left: 0px;
+    margin-bottom: 48px;
+}
+
+/*education style*/
+.education{
+    margin-left: 0px;
+    border-left: 0px;
+    margin-bottom: 78px;
+}
+
+ 
+
+/*skill style*/
+.skillOut{
+    width:1519px;
+    height:360px;
+    margin:0 auto;
+    background-color:#96A9C4;
+    margin-top:120px;
+    margin-bottom: 136px;
+    z-index: 0;
+    position: absolute;
+    top:1198px;
+}
+
+.skillInside{
+    width:1200px;
+    height:494px;
+    margin: 0 auto;
+    background-color:#415465;
+    color:#fff;
+    margin-bottom: 72px;
+    position: relative;
+    z-index: 1;
+}
+.skillTitle{
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 32px;
+    max-width: 996px;
+    text-align: center;
+}
+.skillTitleCh{
+    display: inline-block;
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+.skillTitleEn{
+    display: inline-block;
+    font-family: Roboto, Light;
+    font-size: 24px;
+    line-height: 32px; 
+    font-weight: bold;
+}
+.skillList{
+    max-width: 216px;
+
+    margin-top: 40px;
+    margin-left: 492px;
+    padding-right: 471px;
+    padding-left: 24px;
+    border-left: 1px solid #fff;
+
+}
+.skillList > ul > li{
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+
+/*work experience style*/
+
+.hex
+{
+    max-width: 90px;
+    max-height: 67px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.simtree{
+    max-width: 72px;
+    height: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+/*footer style*/
+.footer{
+    background-color: #415165;
+    height: 400px;
+}
+.footerInside{
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+    text-align: center;
+    color:#fff;
+    line-height: 45px;
+    font-size: 32px;
+}
+.footerTitle{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 32px;
+    max-width: 1200px;
+}
+.footerTitleCh{
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 45px;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+.footerTitleEn{
+    display: inline-block;
+    font-size: 24px;
+    line-height: 32px; 
+    font-weight: bold;
+    margin-top: 31px;
+}
+.footerContent{
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+.icon{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+}
+.centerIcon{
+    margin-right: 24px;
+    margin-left: 24px;
+}
